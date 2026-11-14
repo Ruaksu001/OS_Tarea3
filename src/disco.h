@@ -15,5 +15,7 @@ Disco *disco_crear(int tam_mb, int tam_bloque_kb);
 // liberar memoria ocupada por disco
 void disco_destruir(Disco *d);
 
+// imprimir disco en terminal
+void imprimir_disco(Disco *d);
 
 #endif

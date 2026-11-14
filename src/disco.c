@@ -22,3 +22,19 @@ void disco_destruir(Disco *d) {
     free(d->dueno);
     free(d);
 }
+
+void imprimir_disco(Disco *d) {
+    for (int i = 0; i < d->n_bloques; ++i) {
+        if (d->dueno[i] == LIBRE) {
+            printf(".");
+        } else {
+            printf("#");
+        }
+
+        // salto de linea cada 64 bloques
+        if ((i + 1) % 64 == 0) {
+            printf("\n");
+        }
+    }
+    printf("\n");
+}
