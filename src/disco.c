@@ -24,6 +24,9 @@ void disco_destruir(Disco *d) {
 }
 
 void imprimir_disco(Disco *d) {
+    if (d->n_bloques > 512) {
+        return; // demasiado grande para mostrar en terminal
+    }
     for (int i = 0; i < d->n_bloques; ++i) {
         if (d->dueno[i] == LIBRE) {
             printf(".");
