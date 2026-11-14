@@ -18,7 +18,7 @@ typedef struct {
 typedef struct {
     int n_bloques; // cantidad de bloques
     int tam_bloque; // bytes
-    int libres; // contador de bloques libres
+    int bloques_libres; // contador de bloques libres
     int *dueno;
 
     Archivo *archivos; // archivos existentes

@@ -14,7 +14,7 @@ Disco *disco_crear(int tam_mb, int tam_bloque_kb) {
         d->dueno[i] = LIBRE; // todos los bloques estan libres
     }
 
-    d->libres = d->n_bloques; // al inicio todo esta libre
+    d->bloques_libres = d->n_bloques; // al inicio todo esta libre
 
     d->n_archivos = 0;
     d->capacidad_archivos = 16;
